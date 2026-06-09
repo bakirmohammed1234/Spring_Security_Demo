@@ -21,6 +21,7 @@ public class UserEntity {
     @Column(name = "is_active")
     private Boolean isActive;
     @Column(name = "role")
-    private String role;
+    @Enumerated(EnumType.STRING) // store it as String
+    private Role role;
 
 }
