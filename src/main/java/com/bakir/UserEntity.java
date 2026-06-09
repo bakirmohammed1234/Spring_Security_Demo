@@ -20,5 +20,7 @@ public class UserEntity {
     private String password;
     @Column(name = "is_active")
     private Boolean isActive;
+    @Column(name = "role")
+    private String role;
 
 }
